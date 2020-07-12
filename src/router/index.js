@@ -5,14 +5,14 @@ import {
   Route
 } from "react-router-dom";
 import { authGuard } from './modules'
-import LoginController from '../pages/authentication/login/login-controller'
+import LandingController from './../pages/landing/controller';
 
 export default function App() {
   return (
     <Router>
         <Switch>
           <Route path="/">
-            <LoginController/>
+            <LandingController/>
           </Route>
         </Switch>
     </Router>
